@@ -22,12 +22,12 @@ b)  sum = 0 --> O(n)
         for k in range(j + 1, n): --> O(n)
           k += 1
 
-          for l in range(k + 1, 10 + k): --> O(n)
+          for l in range(k + 1, 10 + k): --> O(1)
             l += 1
 
             sum += 1
 
-This will be O(n^4) because there are four nested loops within this function.
+This will be O(n^3) because there are four nested loops within this function.
 ```
 
 ```
