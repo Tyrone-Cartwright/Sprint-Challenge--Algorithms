@@ -39,3 +39,7 @@ c)  def bunnyEars(bunnies):
 
 This will be O(n) as the calculations will equal the length of the input
 ```
+
+## Exercise II
+
+I would use a Binary Search algorithm, I would start at the middle floor and drop an egg. If it breaks, we can conclude that f must be on the lower half of the building. So then we move to the middle of the building and drop another egg. Then we can cut the remaining possible floors in half and drop another egg, and see if the middle value is too high or too low. In this way we will arrive at floor f in O(log(n)) steps.
